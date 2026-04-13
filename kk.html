@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 唐诗展示</title>
+    <!-- 引入 Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* * 作业要求 1: 使用css定义div的样式 
+         * 宽度为130px, 高度为210px, 且向左浮动
+         */
+        .custom-poem-box {
+            width: 130px;
+            height: 210px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h3>Bootstrap通用样式 - 作业演示</h3>
+        <hr>
+
+        <!-- 
+            作业要求 2: 在页面上放置2个div
+            作业要求 3: 边框蓝色 (border border-primary), 背景灰色 (bg-light), 内边距1rem (p-3), 外边距0.5rem (m-2)
+            作业要求 4: 字体颜色为红色 (text-danger)
+        -->
+        
+        <!-- 第一个 div: 春夜喜雨 -->
+        <div class="custom-poem-box border border-primary bg-light p-3 m-2 text-danger">
+            <!-- 作业要求 5: 标题为粗体 (fw-bold) -->
+            <div class="fw-bold mb-2">春夜喜雨</div>
+            <div class="small">
+                好雨知时节，<br>
+                当春乃发生。<br>
+                随风潜入夜，<br>
+                润物细无声。
+            </div>
+        </div>
+
+        <!-- 第二个 div: 锄禾 -->
+        <div class="custom-poem-box border border-primary bg-light p-3 m-2 text-danger">
+            <!-- 作业要求 5: 标题为粗体 (fw-bold) -->
+            <div class="fw-bold mb-2">锄禾</div>
+            <div class="small">
+                锄禾日当午，<br>
+                汗滴禾下土。<br>
+                谁知盘中餐，<br>
+                粒粒皆辛苦。
+            </div>
+        </div>
+
+        <!-- 清除浮动，防止影响后续布局 (这是一个好习惯) -->
+        <div style="clear: both;"></div>
+    </div>
+
+    <!-- 引入 Bootstrap JS (可选，用于交互组件) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
